@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "this is web app for npress'background",
   "scripts": {},
-  "dependencies": {},
+  "dependencies": {
+
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-connect": "^5.0.0"
+    "gulp-connect": "^5.0.0",
+    "gulp-inject": "^4.1.0"
   },
   "author": "meddkim",
   "license": "ISC"
