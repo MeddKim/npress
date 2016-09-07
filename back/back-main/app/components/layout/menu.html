@@ -1,0 +1,204 @@
+<!-- sidebar: style can be found in sidebar.less -->
+
+<section class="sidebar">
+    <!-- Sidebar user panel -->
+    <div class="user-panel">
+        <div class="image-avatar image">
+            <img src="/app/images/album/21.jpg" class="img-circle" alt="User Image" />
+            <span><i class="fa fa-circle text-success"></i>
+            </span>
+        </div>
+        <div class="info">
+            <p class="text-center">
+                <span>你好,<strong>风清扬</strong></span>
+            </p>
+            <ul class="profile-list">
+                <li>
+                    <a href="#nowhere" data-toggle="tooltip" data-placement="top" title="Profile">
+                        <span data-toggle="modal" data-target="#myModal"><i class="fontello-user-outline"></i>
+                        </span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#nowhere" data-toggle="tooltip" data-placement="top" title="Setting">
+                        <span data-toggle="modal" data-target="#setting"><i class="fontello-wrench-outline"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/login.html" data-toggle="tooltip" data-placement="top" title="Logout">
+                        <span><i class="fontello-power-outline"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SIDEBAR MENU: : style can be found in sidebar.less -->
+    <ul id="menu" class="sidebar-menu">
+        <li class="active">
+            <a href="#!/dashboard" ng-class="{activeSmall:part == 'dashboard'}">
+                <i class="fa fontello-desktop-1"></i>
+                <span>仪表盘</span>
+            </a>
+        </li>
+        <li>
+            <a href="#!/mail" ng-class="{activeSmall:part == 'mail'}">
+                <i class="fa fontello-mail-1"></i>
+                <span>邮箱</span>
+                <small class="badge pull-right bg-yellow text-white">12</small>
+            </a>
+        </li>
+
+        <li class="treeview">
+            <a href="#!/">
+                <i class="fa fontello-inbox"></i>
+                <span class="hide-menu">特殊页面</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="#!/invoice">清单明细</a>
+                </li>
+                <li><a href="pages/login.html">登陆</a>
+                </li>
+                <li><a href="#!/masonry">画廊</a>
+                </li>
+                <li><a href="pages/lockscreen.html">锁屏</a>
+                </li>
+                <li><a href="#!/404">404 Error</a>
+                </li>
+                <li><a href="#!/timeline">时间轴</a>
+                </li>
+                <li><a href="#!/blank">空白页</a>
+                </li>
+                <li><a href="#!/shop">商品信息<small class="badge pull-right bg-aqua text-white">New</small></a>
+                </li>
+                <li><a href="#!/shop-list">商品列表<small class="badge pull-right bg-aqua text-white">New</small></a>
+                </li>
+                <li><a href="#!/shop-detail">商品详情<small class="badge pull-right bg-aqua text-white">New</small></a>
+                </li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a href="#">
+                <i class="fa fontello-paper-plane"></i>
+                <span>UI元素</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="#!/general" ng-class="{activeSmall:part == 'general'}">通用 <small class="badge pull-right bg-green text-white">HOT</small></a>
+                </li>
+                <li><a href="#!/icons" ng-class="{activeSmall:part == 'icons'}">图标</a>
+                </li>
+                <li><a href="#!/button" ng-class="{activeSmall:part == 'button'}">按钮</a>
+                </li>
+                <li><a href="#!/peta">Map<small class="badge pull-right bg-green text-white">New</small></a>
+                </li>
+                <li><a href="#!/calendar" ng-class="{activeSmall:part == 'calendar'}">日程表</a>
+                </li>
+                <li><a href="#!/typhography" ng-class="{activeSmall:part == 'typhography'}">排版</a>
+                </li>
+
+            </ul>
+        </li>
+        <li class="treeview">
+            <a href="#!/">
+                <i class="fa fontello-note"></i>
+                <span>表单</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="#!/general-element">基础元素</a>
+                </li>
+                <li><a href="#!/advanced">高级元素</a>
+                </li>
+                <li><a href="#!/editors" ng-class="{activeSmall:part == 'editors'}">富文本编辑</a>
+                </li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a href="#!/">
+                <i class="fa fontello-database-1"></i>
+                <span>表格</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="#!/table">简单表格</a>
+                </li>
+                <li><a href="#!/data-table">数据表格</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="treeview">
+            <a href="#!/">
+                <i class="fa fontello-params"></i>
+                <span>图表</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="#!/morris" ng-class="{activeSmall:part == 'morris'}">Morris</a>
+                </li>
+                <li><a href="#!/flot">Flot</a>
+                </li>
+
+            </ul>
+        </li>
+
+        <li class="treeview">
+            <a href="#!/">
+                <i class="fa fontello-pencil-1"></i>
+                <span>博客</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="#!/blog-list">博客列表</a>
+                </li>
+                <li><a href="#!/blog-detail">博客详情</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="info">
+        <small class="text-progess text-right clearfix">Profile Complete<b class="text-right pull-right">70 %</b>
+        </small>
+        <div class="progress xs progress-dark">
+            <div class="progress-bar progress-bar-blue" style="width: 70%;"></div>
+        </div>
+        <small class="text-progess text-right clearfix">Disk Usage<b class="text-right pull-right">37 %</b>
+        </small>
+        <div class="progress xs progress-dark">
+            <div class="progress-bar progress-bar-green" style="width: 37%;"></div>
+        </div>
+    </div>
+
+
+</section>
+
+<!-- /.sidebar -->
+
+<script>
+    /* Sidebar tree view */
+    (function($) {
+        $(".sidebar .treeview").tree();
+    })(jQuery);
+
+    $('#menu').slicknav();
+    //Activate tooltips
+    $("[data-toggle='tooltip']").tooltip();
+
+    function fix_sidebar() {
+        //Make sure the body tag has the .fixed class
+        if (!$("body").hasClass("fixed")) {
+            return;
+        }
+
+        //Add slimscroll
+        $(".sidebar").slimscroll({
+            height: ($(window).height() - $(".header").height()) + "px",
+            color: "rgba(0,0,0,0.3)"
+        });
+    }
+</script>
