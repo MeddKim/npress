@@ -1,4 +1,4 @@
 'use strict';
 
-angular.module('app').run(function() {
+angular.module('npress').run(function() {
 });
