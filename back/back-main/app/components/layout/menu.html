@@ -77,14 +77,16 @@
     </ul> -->
 
     <ul class="sidebar-menu">
-        <li class="active">
+        <li class="" ng-repeat="menu in vm.menuScroll" menu-scroll ng-class="{active:$index == 0}">
             <a href="">
-                <i class="fa fontello-desktop-1"></i>
+                <i class={{menu.icon}}></i>
+                <span ng-bind="menu.menuName"></span>
             </a>
-            <span>仪表盘</span>
-        </li>
-        <li class="treeview">
-
+            <ul class="treeview-menu">
+                <li ng-repeat="childMenu in menu.children">
+                  <a href="#!/invoice" ng-bind="childMenu.menuName"></a>
+                </li>
+            </ul>
         </li>
     </ul>
 </section>

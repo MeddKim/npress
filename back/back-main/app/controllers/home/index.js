@@ -1,5 +1,6 @@
 'use strict';
 
-angular.module('app').controller('HomeIndexCtrl', function HomeIndexCtrl($scope) {
+angular.module('npress').controller('HomeIndexCtrl', function HomeIndexCtrl($scope) {
   var vm = $scope.vm = {};
+
 });

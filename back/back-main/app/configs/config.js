@@ -54,14 +54,19 @@
  *	－导出
  *	－同步
  */
-angular.module('npress').config(menuConfig);
+// angular.module('npress').config(menuConfig);
 
-menuConfig.$inject = ['menuScroll'];
+// menuConfig.$inject = ['menuScroll'];
 
-function menuConfig(menuScroll){
-  menuScroll = [{
+// function menuConfig(menuScroll){
+  var menuScroll = [{
+    "menuName":"NPress面板",
+    "icon":'fa fontello-desktop',
+    "url":'',
+    "children":false
+  },{
     "menuName":"文章",
-    "icon":'',
+    "icon":'fa fontello-pen',
     'url':'',
     'children':[{
       "menuName":"所有文章",
@@ -84,7 +89,7 @@ function menuConfig(menuScroll){
     }]
   },{
     "menuName":"页面",
-    "icon":'',
+    "icon":'fa fontello-inbox',
     'url':'',
     'children':[{
       "menuName":"所有页面",
@@ -98,7 +103,7 @@ function menuConfig(menuScroll){
     }]
   },{
     "menuName":"附件",
-    "icon":'',
+    "icon":'fa fontello-attach',
     'url':'',
     'children':[{
       "menuName":"所有附件",
@@ -107,5 +112,117 @@ function menuConfig(menuScroll){
       "menuName":"上传",
       "url":""
     }]
+  },{
+    "menuName":"微信",
+    "icon":'fa fontello-chat-alt',
+    'url':'',
+    'children':[{
+      "menuName":"自动回复",
+      "url":""
+    },{
+      "menuName":"默认回复",
+      "url":""
+    },{
+      "menuName":"菜单设置",
+      "url":""
+    },{
+      "menuName":"微信设置",
+      "url":""
+    }]
+  },{
+    "menuName":"用户",
+    "icon":'fa  fontello-users',
+    'url':'',
+    'children':[{
+      "menuName":"所有用户",
+      "url":""
+    },{
+      "menuName":"添加",
+      "url":""
+    },{
+      "menuName":"我的资料",
+      "url":""
+    }]
+  },{
+    "menuName":"模板",
+    "icon":'fa fontello-clipboard',
+    'url':'',
+    'children':[{
+      "menuName":"所有模板",
+      "url":""
+    },{
+      "menuName":"模板安装",
+      "url":""
+    },{
+      "menuName":"菜单",
+      "url":""
+    },{
+      "menuName":"设置",
+      "url":""
+    },{
+      "menuName":"编辑",
+      "url":""
+    }]
+  },{
+    "menuName":"插件",
+    "icon":'fa fontello-address',
+    'url':'',
+    'children':[{
+      "menuName":"所有插件",
+      "url":""
+    },{
+      "menuName":"安装",
+      "url":""
+    }]
+  },{
+    "menuName":"设置",
+    "icon":'fa  fontello-wrench-outline',
+    'url':'',
+    'children':[{
+      "menuName":"常规",
+      "url":""
+    },{
+      "menuName":"评论",
+      "url":""
+    },{
+      "menuName":"通知",
+      "url":""
+    },{
+      "menuName":"SEO",
+      "url":""
+    },{
+      "menuName":"水印",
+      "url":""
+    },{
+      "menuName":"连接形式",
+      "url":""
+    },{
+      "menuName":"登陆注册",
+      "url":""
+    },{
+      "menuName":"CDN加速",
+      "url":""
+    },{
+      "menuName":"API应用",
+      "url":""
+    }]
+  },{
+    "menuName":"工具",
+    "icon":'fa  fontello-eject-outline',
+    'url':'',
+    'children':[{
+      "menuName":"导入",
+      "url":""
+    },{
+      "menuName":"导出",
+      "url":""
+    },{
+      "menuName":"同步",
+      "url":""
+    }]
   }];
-}
+
+  //
+// }
+
+ angular.module('npress').constant('menuScroll',menuScroll);
