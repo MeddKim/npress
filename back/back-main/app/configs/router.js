@@ -49,7 +49,7 @@ angular.module('npress').config(function ($stateProvider, $urlRouterProvider) {
   //
   $stateProvider.state('article',{
     url:'/article',
-    template: '<div ui-view></div>',
+    // template: '<div ui-view></div>',
     abstract:true
   }).state('article.list',{
     url:'/list',

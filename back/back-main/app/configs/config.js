@@ -62,163 +62,163 @@
   var menuScroll = [{
     "menuName":"NPress面板",
     "icon":'fa fontello-desktop',
-    "url":'',
+    "url":'home',
     "children":false
   },{
     "menuName":"文章",
     "icon":'fa fontello-pen',
-    'url':'',
+    'url':'article',
     'children':[{
       "menuName":"所有文章",
-      "url":""
+      "url":"article.list"
     },{
       "menuName":"撰写文章",
-      "url":""
+      "url":"article.create"
     },{
       "menuName":"分类",
-      "url":""
+      "url":"article/list"
     },{
       "menuName":"专题",
-      "url":""
+      "url":"article/list"
     },{
       "menuName":"标签",
-      "url":""
+      "url":"article/list"
     },{
       "menuName":"评论",
-      "url":""
+      "url":"/article/list"
     }]
   },{
     "menuName":"页面",
     "icon":'fa fontello-inbox',
-    'url':'',
+    'url':'/page',
     'children':[{
       "menuName":"所有页面",
-      "url":""
+      "url":"/page/list"
     },{
       "menuName":"新建页面",
-      "url":""
+      "url":"/page/create"
     },{
       "menuName":"评论",
-      "url":""
+      "url":"/page/comment"
     }]
   },{
     "menuName":"附件",
     "icon":'fa fontello-attach',
-    'url':'',
+    'url':'/accessory',
     'children':[{
       "menuName":"所有附件",
-      "url":""
+      "url":"/accessory/list"
     },{
       "menuName":"上传",
-      "url":""
+      "url":"/accessory/upload"
     }]
   },{
     "menuName":"微信",
     "icon":'fa fontello-chat-alt',
-    'url':'',
+    'url':'wechat',
     'children':[{
       "menuName":"自动回复",
-      "url":""
+      "url":"/wechat/auto"
     },{
       "menuName":"默认回复",
-      "url":""
+      "url":"/wechat/default"
     },{
       "menuName":"菜单设置",
-      "url":""
+      "url":"/wechat/menu"
     },{
       "menuName":"微信设置",
-      "url":""
+      "url":"/wechat/settings"
     }]
   },{
     "menuName":"用户",
     "icon":'fa  fontello-users',
-    'url':'',
+    'url':'user',
     'children':[{
       "menuName":"所有用户",
-      "url":""
+      "url":"/user/list"
     },{
       "menuName":"添加",
-      "url":""
+      "url":"/user/add"
     },{
       "menuName":"我的资料",
-      "url":""
+      "url":"/user/mine"
     }]
   },{
     "menuName":"模板",
     "icon":'fa fontello-clipboard',
-    'url':'',
+    'url':'template',
     'children':[{
       "menuName":"所有模板",
-      "url":""
+      "url":"/template/list"
     },{
       "menuName":"模板安装",
-      "url":""
+      "url":"/template/install"
     },{
       "menuName":"菜单",
-      "url":""
+      "url":"/template/menu"
     },{
       "menuName":"设置",
-      "url":""
+      "url":"/template/settings"
     },{
       "menuName":"编辑",
-      "url":""
+      "url":"/template/edit"
     }]
   },{
     "menuName":"插件",
     "icon":'fa fontello-address',
-    'url':'',
+    'url':'plugin',
     'children':[{
       "menuName":"所有插件",
-      "url":""
+      "url":"/plugin/list"
     },{
       "menuName":"安装",
-      "url":""
+      "url":"/template/install"
     }]
   },{
     "menuName":"设置",
     "icon":'fa  fontello-wrench-outline',
-    'url':'',
+    'url':'settings',
     'children':[{
       "menuName":"常规",
-      "url":""
+      "url":"/settings/normal"
     },{
       "menuName":"评论",
-      "url":""
+      "url":"/settings/comment"
     },{
       "menuName":"通知",
-      "url":""
+      "url":"/settings/normal"
     },{
       "menuName":"SEO",
-      "url":""
+      "url":"/settings/seo"
     },{
       "menuName":"水印",
-      "url":""
+      "url":"/settings/seo"
     },{
       "menuName":"连接形式",
-      "url":""
+      "url":"/settings/seo"
     },{
       "menuName":"登陆注册",
-      "url":""
+      "url":"/settings/seo"
     },{
       "menuName":"CDN加速",
-      "url":""
+      "url":"/settings/seo"
     },{
       "menuName":"API应用",
-      "url":""
+      "url":"/settings/seo"
     }]
   },{
     "menuName":"工具",
     "icon":'fa  fontello-eject-outline',
-    'url':'',
+    'url':'tool',
     'children':[{
       "menuName":"导入",
-      "url":""
+      "url":"/tool/import"
     },{
       "menuName":"导出",
-      "url":""
+      "url":"/tool/export"
     },{
       "menuName":"同步",
-      "url":""
+      "url":"/tool/sync"
     }]
   }];
 

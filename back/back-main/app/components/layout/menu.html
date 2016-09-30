@@ -78,13 +78,13 @@
 
     <ul class="sidebar-menu">
         <li class="" ng-repeat="menu in vm.menuScroll" menu-scroll ng-class="{active:$index == 0}">
-            <a href="">
+            <a ui-sref="{{menu.url}}" class="main-menu-content">
                 <i class={{menu.icon}}></i>
                 <span ng-bind="menu.menuName"></span>
             </a>
             <ul class="treeview-menu">
                 <li ng-repeat="childMenu in menu.children">
-                  <a href="#!/invoice" ng-bind="childMenu.menuName"></a>
+                  <a ui-sref="{{childMenu.url}}" ng-bind="childMenu.menuName"></a>
                 </li>
             </ul>
         </li>

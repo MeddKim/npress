@@ -19,9 +19,18 @@ angular.module('npress').directive('menuScroll', function menuScroll() {
   };
 
   function link(scope, element, attrs){
-    element.click(function(){
+      // console.log(element.siblings().removeClass('active'));
+      // element.addClass('active');
+      // console.log(element.find('ul').css('display','block'));
+      // element.find('ul').slideDown();
+      // element.siblings().find('ul').slideUp();
+      // element.find('ul').slideToggle();
+      // element.css("display",'block');
+    element.find('a.main-menu-content').click(function(){
+      element.siblings().removeClass('active')
+      element.siblings().find('ul').slideUp();
       element.addClass('active');
-      element.css("display",'block');
+      element.find('ul').slideToggle();
     });
   }
 });
@@ -29,5 +38,5 @@ angular.module('npress').directive('menuScroll', function menuScroll() {
 angular.module('npress').controller('LayoutMenuCtrl', function LayoutMenuCtrl($scope,menuScroll) {
   var vm = $scope.vm = {};
   vm.menuScroll = menuScroll;
-  console.log("呵呵呵呵");
+
 });
