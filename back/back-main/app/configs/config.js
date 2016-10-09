@@ -59,12 +59,15 @@
 // menuConfig.$inject = ['menuScroll'];
 
 // function menuConfig(menuScroll){
-  var menuScroll = [{
-    "menuName":"NPress面板",
-    "icon":'fa fontello-desktop',
-    "url":'home',
-    "children":false
-  },{
+  var menuScroll = [
+  // {
+  //   "menuName":"NPress面板",
+  //   "icon":'fa fontello-desktop',
+  //   "url":'home',
+  //   "children":false
+  // },
+
+  {
     "menuName":"文章",
     "icon":'fa fontello-pen',
     'url':'article',
@@ -90,13 +93,13 @@
   },{
     "menuName":"页面",
     "icon":'fa fontello-inbox',
-    'url':'/page',
+    'url':'article',
     'children':[{
       "menuName":"所有页面",
-      "url":"/page/list"
+      "url":"article.list"
     },{
       "menuName":"新建页面",
-      "url":"/page/create"
+      "url":"page.create"
     },{
       "menuName":"评论",
       "url":"/page/comment"
@@ -104,7 +107,7 @@
   },{
     "menuName":"附件",
     "icon":'fa fontello-attach',
-    'url':'/accessory',
+    'url':'article',
     'children':[{
       "menuName":"所有附件",
       "url":"/accessory/list"
@@ -115,10 +118,10 @@
   },{
     "menuName":"微信",
     "icon":'fa fontello-chat-alt',
-    'url':'wechat',
+    'url':'article',
     'children':[{
       "menuName":"自动回复",
-      "url":"/wechat/auto"
+      "url":"article"
     },{
       "menuName":"默认回复",
       "url":"/wechat/default"
@@ -132,7 +135,7 @@
   },{
     "menuName":"用户",
     "icon":'fa  fontello-users',
-    'url':'user',
+    'url':'article',
     'children':[{
       "menuName":"所有用户",
       "url":"/user/list"

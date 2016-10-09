@@ -14,7 +14,9 @@ angular.module('npress').directive('menuScroll', function menuScroll() {
   return {
     link:link,
     restrict: 'EA',
-    scope: {},
+    scope: {
+      pageForward:'&pageForward'
+    },
     controller: 'AppLayoutCtrl'
   };
 
@@ -31,12 +33,17 @@ angular.module('npress').directive('menuScroll', function menuScroll() {
       element.siblings().find('ul').slideUp();
       element.addClass('active');
       element.find('ul').slideToggle();
+
     });
   }
 });
 
-angular.module('npress').controller('LayoutMenuCtrl', function LayoutMenuCtrl($scope,menuScroll) {
+angular.module('npress').controller('LayoutMenuCtrl', function LayoutMenuCtrl($scope,menuScroll,$state) {
   var vm = $scope.vm = {};
   vm.menuScroll = menuScroll;
+  vm.pageForward = function(url){
+    // $state.go('home');
+    console.log("hehehhe");
+  }
 
 });

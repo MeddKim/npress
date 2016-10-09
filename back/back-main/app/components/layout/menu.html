@@ -77,8 +77,16 @@
     </ul> -->
 
     <ul class="sidebar-menu">
-        <li class="" ng-repeat="menu in vm.menuScroll" menu-scroll ng-class="{active:$index == 0}">
-            <a ui-sref="{{menu.url}}" class="main-menu-content">
+        <!--面板目录没有子目录，所以比较特殊-->
+        <li  menu-scroll class="active">
+            <a ui-sref="home" class="main-menu-content" >
+                <i class="fa fontello-desktop"></i>
+                <span >NPress面板</span>
+            </a>
+        </li>
+
+        <li class="" ng-repeat="menu in vm.menuScroll" menu-scroll>
+            <a href="javascript:void(0)" class="main-menu-content"　>
                 <i class={{menu.icon}}></i>
                 <span ng-bind="menu.menuName"></span>
             </a>
@@ -89,4 +97,5 @@
             </ul>
         </li>
     </ul>
+
 </section>
