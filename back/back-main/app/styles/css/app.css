@@ -1,0 +1,20 @@
+.count-box{
+    position: relative;
+    display: block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    min-height: 140px;
+    text-align: center;
+}
+.coount-box {}
+.count-box .count-box-title{
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.small-box .count-box-amount{
+  font-size: 24px;
+  font-weight:bold;
+}
