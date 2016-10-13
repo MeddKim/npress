@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app').service('utils', function Utils() {
+angular.module('npress').service('utils', function Utils() {
   this.getControllerCss = function (controller) {
     if (!controller || !angular.isString(controller)) {
       return '';

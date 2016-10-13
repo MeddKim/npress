@@ -47,18 +47,36 @@ angular.module('npress').config(function ($stateProvider, $urlRouterProvider) {
   //   controller: 'ReaderCreateCtrl as vm'
   // });
   //
+  //
+  $stateProvider.state('reader',{
+    url:'/reader',
+    template: '<div ui-view></div>',
+    abstract:true
+  }).state('reader.list',{
+    url:'/list',
+    templateUrl:'app/controllers/reader/list.html',
+    controller:'ReaderListCtrl as vm'
+  }).state('reader.create',{
+    url:'/create',
+    // params:["id","name"],
+    params:{"id":null,"name":null},
+    templateUrl:'app/controllers/reader/create.html',
+    controller:'ReaderCreateCtrl as vm'
+  });
+
+
   $stateProvider.state('article',{
     url:'/article',
-    // template: '<div ui-view></div>',
+    template: '<div ui-view></div>',
     abstract:true
   }).state('article.list',{
     url:'/list',
-    templateUrl:'app/controllers/article/article.list.html',
+    templateUrl:'app/controllers/article/list.html',
     controller:'ArticleListCtrl as vm'
   }).state('article.create',{
     url:'/create',
     templateUrl:'app/controllers/article/article.create.html',
     controller:'ArticleCreateCtrl as vm'
-  })
+  });
 
 });

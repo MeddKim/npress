@@ -1,5 +1,5 @@
 'use strict';
-angular.module('app').factory('AuthHandler', function ($q) {
+angular.module('npress').factory('AuthHandler', function ($q) {
   var AuthHandler = {};
   AuthHandler.request = function (config) {
     if (config.data && config.data.$skipAuthHandler) {

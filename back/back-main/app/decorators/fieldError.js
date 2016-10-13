@@ -19,8 +19,8 @@
 //     }
 //   };
 // });
-// 
-// 
+//
+//
 // angular.module('app').directive('bfFieldError', function bfFieldError($compile) {
 //   return {
 //     restrict:'A',
@@ -29,7 +29,7 @@
 //   };
 // });
 
-angular.module('app').directive('bfFieldError', function bfFieldError($compile) {
+angular.module('npress').directive('bfFieldError', function bfFieldError($compile) {
   return {
     restrict: 'A',
     // 这个元素上必须有一个ng-model属性，如果没有，就会报错
@@ -39,7 +39,7 @@ angular.module('app').directive('bfFieldError', function bfFieldError($compile) 
       var subScope = scope.$new(true);
       //在子scope中添加两个函数，供模板使用
       //是否需要使用错误
-      subScope.hasError =
+      // subScope.hasError =
     }
   };
 });

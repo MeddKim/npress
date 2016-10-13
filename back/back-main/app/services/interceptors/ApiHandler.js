@@ -1,5 +1,5 @@
 'use strict';
-angular.module('app').provider('ApiHandler', function ApiHandlerProvider() {
+angular.module('npress').provider('ApiHandler', function ApiHandlerProvider() {
   var baseUrl = '';
   this.setBaseUrl = function (value) {
     baseUrl = value.replace(/\/$/, '');

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app').factory('ErrorHandler', function ErrorHandlerFactory($q, $injector) {
+angular.module('npress').factory('ErrorHandler', function ErrorHandlerFactory($q, $injector) {
   var ErrorHandler = {};
 
   ErrorHandler.request = function (config) {

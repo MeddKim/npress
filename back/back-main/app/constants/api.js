@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app').constant('api', {
+angular.module('npress').constant('api', {
   root: '/api',
   apiOf: function(path) {
     if (!path.match('^/')) {
