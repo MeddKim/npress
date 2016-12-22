@@ -68,7 +68,7 @@
               p:configLocation="classpath:myBatisConfig.xml"
               p:mapperLocations="classpath:com/npress/web/domain/**/*.xml"/>
 
-        <bean class="org.mybatis.spring.SqlSessionTemplate">
+        <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
             <constructor-arg ref="sqlSessionFactory"/>
         </bean>
 </beans>
