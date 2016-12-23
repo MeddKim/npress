@@ -9,14 +9,15 @@
     </settings>
 
     <!--定义全限定类名的别名-->
-    <typeAliases>
-        <typeAlias alias="LoginLog" type="com.med.web.domain.LoginLog"/>
-        <typeAlias alias="User" type="com.med.web.domain.User"/>
-    </typeAliases>
+    <!--<typeAliases>-->
+        <!--<typeAlias alias="LoginLog" type="com.npress.web.domain.LoginLog"/>-->
+        <!--<typeAlias alias="User" type="com.npress.web.domain.User"/>-->
+    <!--</typeAliases>-->
 
     <!--将myBatis映射文件组装起来-->
-    <mappers>
-        <mapper resource="org/mybatis/example/BlogMapper.xml"/>
-    </mappers>
+    <!--<mappers>-->
+        <!--<mapper resource="com/npress/web/domain/mapper/LoginLogMapper.xml"/>-->
+        <!--<mapper resource="com/npress/web/domain/mapper/UserMapper.xml"/>-->
+    <!--</mappers>-->
 
 </configuration>

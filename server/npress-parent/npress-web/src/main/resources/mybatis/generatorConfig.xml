@@ -26,8 +26,8 @@
         </javaModelGenerator>
 
         <!--sqlMapGenerator ：指定生成pojo的映射xml文件的所在包和此包在项目中的地址；-->
-        <sqlMapGenerator targetPackage="com.npress.web.domain.mapper"
-                         targetProject="D:/DEV_FILE/app/npress/server/npress-parent/npress-web/src/main/java">
+        <sqlMapGenerator targetPackage="mybatis-mapper"
+                         targetProject="D:/DEV_FILE/app/npress/server/npress-parent/npress-web/src/main/resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 

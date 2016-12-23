@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
  * @date : 2016/12/22 0022
  * @Description:
  */
+
 @Component
 public class UserDaoImpl implements UserMapper {
 

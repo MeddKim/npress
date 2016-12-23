@@ -1,6 +1,7 @@
 package com.npress.dao;
 
 import com.npress.web.dao.impl.UserDaoImpl;
+import com.npress.web.domain.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +15,9 @@ import org.springframework.transaction.annotation.Transactional;
  * @Description:
  */
 
-@Transactional
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:applicationContext.xml")
+//@ContextConfiguration(locations = {"classpath*:applicationContext.xml"})
+@ContextConfiguration(locations = {"classpath:applicationContext.xml"})
 public class UserDaoTest {
 
     @Autowired
@@ -24,6 +25,9 @@ public class UserDaoTest {
 
     @Test
     public void showUser(){
-        
+        User user = userDao.selectByPrimaryKey(1);
+        System.out.println(user.getUserName());
     }
+
+
 }
