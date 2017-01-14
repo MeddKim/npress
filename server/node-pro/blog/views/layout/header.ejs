@@ -15,3 +15,11 @@
 		<span><a title="注册" href="/reg">register</a></span>
 	</nav>
 	<article>
+
+	<% if(success) {%>
+		<div> <%= success %></div>
+	<% } %>
+
+	<% if(error){ %>
+		<div> <%=error%></div>
+	<% } %>

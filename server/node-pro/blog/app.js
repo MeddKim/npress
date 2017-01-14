@@ -18,7 +18,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.set(flash())
+
 
 // uncomment after placing your favicon in /public
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico'))); //设置favicon
@@ -27,10 +27,6 @@ app.use(bodyParser.json()); //json解析中间件
 app.use(bodyParser.urlencoded({ extended: false })); //urlencodded请求体解析中间件
 app.use(cookieParser()); //cookie解析的中间件
 app.use(express.static(path.join(__dirname, 'public'))); //设置public文件夹为静态文件存放目录
-
-app.use('/', index); 
-app.use('/users', users);
-
 
 app.use(session({
 	secret:settings.cookieSecret,
@@ -43,6 +39,13 @@ app.use(session({
 		url: 'mongodb://localhost/blog'
 	})
 }));
+app.use(flash())
+
+app.use('/', index); 
+app.use('/users', users);
+
+
+
 
 // index(app);
 // app.get("/",function(req,res){
