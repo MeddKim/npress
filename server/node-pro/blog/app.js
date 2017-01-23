@@ -7,12 +7,14 @@ var bodyParser = require('body-parser');
 var session = require('express-session'); //
 var MongoStore = require('connect-mongo')(session);
 var flash = require('connect-flash');
+var multer = require('multer');  //文件上传
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 var settings = require('./settings');
 
 var app = express();
+var upload = multer({ dest: './public/images' });
 
 
 // view engine setup
@@ -39,7 +41,7 @@ app.use(session({
 		url: 'mongodb://localhost/blog'
 	})
 }));
-app.use(flash())
+app.use(flash());
 
 app.use('/', index); 
 app.use('/users', users);
